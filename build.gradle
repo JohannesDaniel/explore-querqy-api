@@ -1,0 +1,21 @@
+plugins {
+    id 'java'
+}
+
+group 'org.querqy'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.11
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation group: 'org.apache.solr', name: 'solr-solrj', version: '8.9.0'
+    implementation group: 'org.querqy', name: 'querqy-core', version: '3.11.0'
+    
+    testImplementation group: 'junit', name: 'junit', version: '4.12'
+    testImplementation group: 'org.assertj', name: 'assertj-core', version: '3.19.0'
+
+}
